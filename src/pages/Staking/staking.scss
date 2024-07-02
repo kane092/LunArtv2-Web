@@ -1,0 +1,212 @@
+.stakingModal {
+  border: 1px solid #272730;
+  border-radius: 6px;
+  max-width: 570px;
+  width: 570px;
+  margin: 0 auto;
+ .card-wrapper {
+  border-radius: 6px;
+  background: linear-gradient(144.49deg, #1d1d26 0%, #16161d 100%);
+  border-radius: 6px;
+  padding: 48px 56px;
+    .card-content-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    .card-content-margin {
+      margin-left: 48px;
+      margin-right: 48px;
+    }
+    .gradient-background {
+      width: 360px;
+    }
+    .input-box:hover, .input-box:focus{border: 2px solid #ffffff7d;}
+    .input-box {
+      display: flex;
+      padding: 10px;
+      background: linear-gradient(96.6deg, rgba(247, 221, 183, 0.06) 1.68%, rgba(247, 206, 144, 0) 100%);
+      border-radius: 4px;
+      border: 2px solid rgba(247, 221, 183, 0.4);
+      input {
+        font-family: "Bai Jamjuree";
+        font-weight: 500;
+        padding: 0 5px 0 12px;
+        flex: 1;
+        width: 100%;
+      }
+
+      button {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 16px;
+        /* identical to box height, or 145% */
+
+        // text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        /* Primary Orange */
+
+        color: #ef784e;
+      }
+
+      span {
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        span {
+          color: rgba(230, 219, 219, 0.75);
+          padding: 0 12px 0 6px;
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 70%;
+            width: 1px;
+            opacity: 0.25;
+            background-color: #b3b3b7;
+          }
+        }
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+
+    .round-button {
+      height: 32px;
+      width: 32px;
+      background-image: url("../../assets/icons/arrowBg.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      // background: linear-gradient(96.6deg, rgba(247, 221, 183, 0.1) 1.68%, rgba(247, 206, 144, 0) 100%);
+      border-radius: 50%;
+      text-align: center;
+      // border: 2px solid;
+      cursor: pointer;
+      // border: 1px solid;
+
+      // border-image-source: linear-gradient(96.6deg, rgba(247, 221, 183, 0.12) 1.68%, rgba(247, 206, 144, 0.09) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .farm-button {
+      /* Auto layout */
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 46px;
+      // margin-top: 40px;
+      /* Primary Orange */
+
+      background: #ef784e;
+      border-radius: 4px;
+      cursor: pointer;
+
+      font-family: "Bai Jamjuree";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+
+      letter-spacing: 0.02em;
+
+      color: #020210;
+
+      img {
+        margin-right: 10.27px;
+      }
+    }
+
+    .farm-form-text {
+      margin-top: 10px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 16px;
+      /* identical to box height */
+
+      letter-spacing: 0.01em;
+
+      /* Faded White Sub-Text */
+
+      color: rgba(230, 219, 219, 0.75);
+
+      .colored {
+        color: #ef784e;
+      }
+      .white-text {
+        color: #FAFAFA;
+      }
+      span {
+        color: rgba(230, 219, 219, 0.75);
+      }
+    }
+    .card-content-wrapper {
+      .card-heading {
+        margin-bottom: 18px;
+      }
+      .title {
+        font-family: "Bai Jamjuree";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        /* identical to box height */
+        letter-spacing: -0.01em;
+        /* White text */
+        color: #fafafa;
+        margin-bottom: 4px;
+        text-align: center;
+        span {
+          color: #93E396;
+        }
+      }
+      .sub-title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height */
+
+        letter-spacing: 0.02em;
+
+        /* Faded White Sub-Text */
+
+        color: rgba(230, 219, 219, 0.75);
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .stakingModal {
+    width: auto;
+    .card-wrapper {
+      padding: 32px 18px;
+      .card-content-margin {
+          margin-left: 0px;
+          margin-right: 0px;
+      }
+      .gradient-background {
+        width: 260px;
+      }
+    }
+  }
+}
